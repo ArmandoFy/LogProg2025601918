@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bisiestro"/>
+        <attribute name="authors" value="Armando"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 02:37:44 a. m."/>
+        <attribute name="created" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDMtMjc7MDI6MDA6MDggYS4gbS47MjY2OA=="/>
+        <attribute name="edited" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDMtMjc7MDI6Mzc6NDQgYS4gbS47MTsyNzg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <input variable="ano"/>
+            <if expression="ano%4 == 0">
+                <then>
+                    <output expression="&quot;Es bisiesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ano%100 == 0">
+                        <then>
+                            <output expression="&quot;no lo es&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ano%400 == 0">
+                                <then>
+                                    <output expression="&quot;Es bisiesto&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;no lo es&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
