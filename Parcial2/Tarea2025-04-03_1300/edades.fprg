@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea 2 dif"/>
+        <attribute name="authors" value="Armando"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 12:34:42 a. m."/>
+        <attribute name="created" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDQtMDI7MTI6MTg6MzAgYS4gbS47MjY2Nw=="/>
+        <attribute name="edited" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDQtMDI7MTI6MzQ6NDIgYS4gbS47MTsyNzc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <input variable="edad"/>
+            <if expression="edad &gt; 0 &amp;&amp; edad &lt;=3">
+                <then>
+                    <output expression="&quot;gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &gt;= 4 &amp;&amp; edad &lt;= 18">
+                        <then>
+                            <output expression="&quot;paga 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad &gt;18 &amp;&amp; edad &lt; 100">
+                                <then>
+                                    <output expression="&quot;pagara 500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

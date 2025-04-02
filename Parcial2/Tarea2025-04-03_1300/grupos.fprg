@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea 1 dif"/>
+        <attribute name="authors" value="Armando"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 12:50:27 a. m."/>
+        <attribute name="created" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDQtMDI7MTI6Mzc6NTAgYS4gbS47MjY3MA=="/>
+        <attribute name="edited" value="QXJtYW5kbztBUk1BTkRPOzIwMjUtMDQtMDI7MTI6NTA6MjcgYS4gbS47MTsyNzc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicial" type="String" array="False" size=""/>
+            <input variable="inicial"/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <input variable="sexo"/>
+            <if expression="inicial &gt;= &quot;n&quot; || sexo = &quot;masculino&quot;">
+                <then>
+                    <output expression="&quot;GRUPO B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;GRUPO A&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
