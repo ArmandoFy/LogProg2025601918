@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pipshash"/>
+        <attribute name="authors" value="Armando Laptop"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 02:44:02 a. m."/>
+        <attribute name="created" value="QXJtYW5kbyBMYXB0b3A7TEFQVE9QLTQ4R0wwN0pHOzIwMjUtMDQtMDc7MDI6MDE6NDYgYS4gbS47MzgyNA=="/>
+        <attribute name="edited" value="QXJtYW5kbyBMYXB0b3A7TEFQVE9QLTQ4R0wwN0pHOzIwMjUtMDQtMDc7MDI6NDQ6MDIgYS4gbS47MTszOTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;que pizza quiere? vegetariana o no vegetariana&quot;" newline="True"/>
+            <declare name="pizza" type="String" array="False" size=""/>
+            <input variable="pizza"/>
+            <declare name="vegetariana" type="String" array="False" size=""/>
+            <declare name="novegetariana" type="String" array="False" size=""/>
+            <if expression="pizza = &quot;vegetariana&quot;">
+                <then>
+                    <output expression="&quot;ingredientes: pimiento y tofu&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pizza = &quot;novegetariana&quot;">
+                        <then>
+                            <output expression="&quot;ingredientes: peperoni, jamon y salmon&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;No tenemos madre&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;escoje un solo ingrediente a demas de la mozzarella y el tomate que estan en todas las pizzas&quot;" newline="True"/>
+            <declare name="ingrediente" type="String" array="False" size=""/>
+            <input variable="ingrediente"/>
+            <if expression="ingrediente = &quot;pimiento&quot;">
+                <then>
+                    <output expression="&quot;Tu piiza es Vegetariana y llevara pimiento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ingrediente = &quot;tofu&quot;">
+                        <then>
+                            <output expression="&quot;Tu piiza es Vegetariana y llevara tofu&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ingrediente = &quot;peperoni&quot;">
+                                <then>
+                                    <output expression="&quot;tu pizza es No Vegetariana y lleva peperoni&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ingrediente = &quot;jamon&quot;">
+                                        <then>
+                                            <output expression="&quot;tu pizza es No Vegetariana y lleva jamon&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ingrediente = &quot;salmon&quot;">
+                                                <then>
+                                                    <output expression="&quot;tu pizza es No Vegetariana y lleva salmon&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;QUE NO HAY MADREEE&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
